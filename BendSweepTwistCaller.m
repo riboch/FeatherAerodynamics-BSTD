@@ -12,7 +12,7 @@ BirdType={'american kestrel 20141225',...
 
 for a1=1:numel(BirdType)
     fprintf('\n\n\\subsection{%s}\n\n',BirdType{a1});
-    BirdData{a1}=BendSweepTwist(BirdType{a1});
+    BirdData{a1}=BendSweepTwistDeflections(BirdType{a1});
 end
 
 

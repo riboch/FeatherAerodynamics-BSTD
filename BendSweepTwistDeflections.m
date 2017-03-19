@@ -62,6 +62,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
         BirdData=RotateData(BirdData,numFPA,numV);
         BirdData=getAngles(BirdData,numFPA,numV);
         BirdData=getDeflections(BirdData,numFPA,numV);
+        %BirdData=getStiffness(BirdData,numFPA,numV);
     
     %Write things to the command line.
         writeoutAngles(BirdData,numFPA,numV,birdtype,writeType)
