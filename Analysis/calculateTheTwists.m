@@ -80,6 +80,12 @@ function BirdData=calculateTheTwists(BirdData,numFPA,numV)
                 BirdData(ind).tau(5).theta=calculateTwist(I,F2prime,false)*radtodeg;
             
             
+            %Proximoproximal Twist
+                F1=BirdData(ind0V).baseframe;
+                F2=BirdData(ind).baseframe;
+                BirdData(ind).tau(6).theta=calculateTwist(F1,F2,false)*radtodeg;
+                
+                
         %Slipped angle of attack, 2017-02-03
             
         end
