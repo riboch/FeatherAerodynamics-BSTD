@@ -1,0 +1,9 @@
+function plotOverlayedQuiver_global(x,v_global,BirdData,camera_params,colour,theScale)
+%Attachs vectors in the global coordinate system to points.    
+
+    p=globalCoordinates(x,BirdData.offset',BirdData.R);%3xm matrix
+    VelVect=cameraPosition([p p+v_global]',camera_params);
+    quiver(VelVect(1,1),VelVect(1,2),VelVect(2,1)-VelVect(1,1),VelVect(2,2)-VelVect(1,2),theScale,colour)
+    
+end
+
