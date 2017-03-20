@@ -1,4 +1,4 @@
-function BirdData=BirdDataAMKE20141213()
+function BirdData=BirdDataAMKE20141225_12ms()
 
     BirdData=struct('AoA',[],'V',[],'x',[],'y',[],'z',[]);
 
@@ -16,7 +16,25 @@ function BirdData=BirdDataAMKE20141213()
     AoA=[0 0 0 0 13.5 13.5 13.5 13.5];
     V=[0 8 12 16 0 8 12 16];
     
+    
+    Fxyz=[  NaN   NaN   NaN ;%V=0, gamma=0
+            5.3	-4.6	-1.5;%V=8, gamma=0
+            14.7	-10.8	3.9;%V=12, gamma=0
+            NaN   NaN   NaN ;%V=16, gamma=0
+            NaN   NaN   NaN ;%V=0, gamma=13.5
+            9.4	-3	30;%V=8, gamma=13.5
+            18.4	-8.1	54.9;%V=12, gamma=13.5
+            NaN   NaN   NaN];%V=16, gamma=13.5
 
+    Mxyz=[  NaN   NaN   NaN ;%V=0, gamma=0
+            -4.736	0.224	9.92;%V=8, gamma=0
+            -7.488	0.344	20.56;%V=12, gamma=0
+            NaN   NaN   NaN ;%V=16, gamma=0
+            NaN   NaN   NaN ;%V=0, gamma=13.5
+            -2.84	0.04	8.272;%V=8, gamma=13.5
+            -5.256	-0.136	17.904;%V=12, gamma=13.5
+            NaN   NaN   NaN];%V=16, gamma=13.5
+    
     for a1=1:size(A,1)
         BirdData(a1).AoA=AoA(a1);
         BirdData(a1).V=V(a1);
@@ -25,6 +43,9 @@ function BirdData=BirdDataAMKE20141213()
         BirdData(a1).y=A(a1,2:3:end)';
 
         BirdData(a1).z=A(a1,3:3:end)';
+        
+        BirdData(a1).F=Fxyz(a1,:);
+        BirdData(a1).M=Mxyz(a1,:);
     end
     
     

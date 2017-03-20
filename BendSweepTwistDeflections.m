@@ -46,7 +46,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
 
     
     % Adds the data path
-        addpath('Data/20141225/');
+        addpath('Data/');
     
     % Adds the analysis, plotting, and writing functions to the path
         addpath('Analysis/');
@@ -62,7 +62,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
         BirdData=RotateData(BirdData,numFPA,numV);
         BirdData=getAngles(BirdData,numFPA,numV);
         BirdData=getDeflections(BirdData,numFPA,numV);
-        %BirdData=getStiffness(BirdData,numFPA,numV);
+        BirdData=getStiffness(BirdData,numFPA,numV);
     
     %Write things to the command line.
         writeoutAngles(BirdData,numFPA,numV,birdtype,writeType)
