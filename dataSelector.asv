@@ -26,7 +26,7 @@ function [BirdData,numFPA,numV,picfolder,birdAcronym]=dataSelector(birdtype)
 %   riboch@umich.edu
 
     picfolder='Pictures/';%Folder containing all the pictures
-                          %Edited 3/19/2017 to reflect small change in folder structure - BKVO  
+                          %Edited  
 
     numFPA=2;
     numV=4;

@@ -46,7 +46,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
 
     
     % Adds the data path
-        addpath('../Data/20141225/');
+        addpath('Data/20141225/');
     
     % Adds the analysis, plotting, and writing functions to the path
         addpath('Analysis/');
