@@ -54,9 +54,11 @@ v_global=[0;-1;0];
                     axis image;
                     colormap gray
                     title(sprintf('\\gamma: %0.1f, v: %0.1f',BirdData(ind).FPA,BirdData(ind).V))
-                    view(-180,90);%Rotates the plot
+                    %view(-180,90); %Rotates the plot, does not work with
+                                    %linkaxes, and I am currently having a problem with
+                                    %linkprop.
                     
-                    
+%Preparing for image rotation.
 %                     sA=size(A);
 %                     figure(20000+a1+10*(b1-1))
 %                         plot3(BirdData(ind).x([1:3 1]),BirdData(ind).y([1:3 1]),BirdData(ind).z([1:3 1]),'k')
