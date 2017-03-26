@@ -1,4 +1,29 @@
 function plotCorrected(tip,R1,R2,F1,F2)
+%   plotCorrected(tip,R1,R2,F1,F2)
+%
+%   This function plots the corrected frames as a concept check for different definitions of twist. 
+%   
+%
+%
+%   
+%   Inputs:
+%
+%       tip: tip frame
+%
+%       R1: Rotation matrix 1
+% 
+%       R2: Rotation matrix 2
+% 
+%       F1: Frame 1
+% 
+%       F2: Frame 2
+%
+%   Outputs:
+%
+%       
+%
+% Richard B. Choroszucha
+% riboch@umich.edu
 
     figure(101)
         I=eye(3,3);

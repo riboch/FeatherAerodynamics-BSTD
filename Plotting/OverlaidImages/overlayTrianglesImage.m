@@ -28,6 +28,8 @@ function overlayTrianglesImage(BirdData,numFPA,numV,camera_params,picfolder,bird
 % Richard B. Choroszucha
 % riboch@umich.edu   
     
+    v_global=[0;-1;0];
+
     for b1=1:3
         for a1=1:numFPA
             figure(10000+a1+10*(b1-1))

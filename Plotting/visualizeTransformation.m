@@ -1,5 +1,28 @@
 function visualizeTransformation(theta,nhat,BirdData)
-
+%   visualizeTransformation(theta,nhat,BirdData)
+%
+%   This function makes a "movie" showing the rotation of BirdData about
+%   nhat by the angle theta (in radians).
+%
+%   
+%   Inputs:
+%
+%       theta: angle subtended in radians.
+%
+%       nhat: Normal vector to rotate about.
+%
+%       BirdData: A structure returned from RotateData
+%
+%       numFPA: Number of flight path angles tested.
+%
+%       numV:   Number of velocity points tested.
+%
+%   Outputs:
+%
+%       
+%
+% Richard B. Choroszucha
+% riboch@umich.edu    
 
     R=rodrigues(theta,nhat)';
     data=[];

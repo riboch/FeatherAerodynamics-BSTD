@@ -14,7 +14,7 @@ function overlayImagePrepare(BirdData,numFPA,numV,camera_params,picfolder,birdAc
 %
 %   Inputs:
 %
-%       BirdData: A structure returned from RotateData
+%       BirdData: A structure with all the information.
 %
 %       numFPA: Number of flight path angles tested.
 %
