@@ -1,4 +1,26 @@
 function printTaus(type,BirdData)
+%   printTaus(type,BirdData)
+%
+%   This function writes all the different twists contained in the tau
+%   field of BirdData to the command line.
+%   
+%
+%
+%   
+%   Inputs:
+%
+%       type: 'excel' or 'latex'
+%
+%       BirdData: A structure containing all the pertinent information.
+%
+%
+%   Outputs:
+%
+%
+%
+% Richard B. Choroszucha
+% riboch@umich.edu
+% 
 
     for a2=1:numel(BirdData(1).tau)
         %{

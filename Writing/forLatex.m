@@ -1,7 +1,32 @@
-function forLatex(BirdData,numAoA,numV,birdtype)
+function forLatex(BirdData,numFPA,numV,birdtype)
+%   forLatex(BirdData,numFPA,numV,birdtype)
+%
+%   This function writes the results table in the latex format to the
+%   command line.
+%   
+%
+%
+%   
+%   Inputs:
+%
+%       BirdData: A structure containing all the pertinent information.
+% 
+%       numFPA: Number of flight path angles tested.
+% 
+%       numV: Number of velocities tested.
+% 
+%       birdtype: A string used to identify the data.
+%
+%
+%   Outputs:
+%
+%
+%
+% Richard B. Choroszucha
+% riboch@umich.edu
+% 
 
-
-    for a1=1:numAoA
+    for a1=1:numFPA
         fprintf('\\begin{table}[H]\n\\centering\n')
         fprintf('\\caption{%s: $%0.1f^\\circ$ Flight Path Angle}',birdtype,BirdData(numV*(a1-1)+1).FPA)
         fprintf('\\label{%s:table:%0.1f}\n',datestr(now,'yyyymmdd'),BirdData(numV*(a1-1)+1).FPA)
