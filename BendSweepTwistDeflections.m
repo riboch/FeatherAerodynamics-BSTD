@@ -78,7 +78,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
         %Obtains the camera parameters for overlaying triangles, frames, and vectors onto the raw images.
             camera_params=DLTCameraParameters();
             overlayImagePrepare(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);  % Prepare raw images
-            overlayTrianglesImage(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);% Overlay proximal and distal triangles
+            %overlayTrianglesImage(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);% Overlay proximal and distal triangles
             overlayFramesOnCamera(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);% Overlay frames on triangles
             %overlayDisplacementsOnCamera(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym)
     

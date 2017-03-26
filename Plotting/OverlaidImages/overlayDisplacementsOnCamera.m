@@ -2,8 +2,8 @@ function overlayDisplacementsOnCamera(BirdData,numFPA,numV,camera_params,picfold
 %   overlayDisplacementsOnCamera(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym)
 %
 %   This function overlays where the distal triangle is expected to be from
-%   the proximal displacement (yellow triangle), where it actually is
-%   (cyan triangle), and then the displacement (yellow vector).
+%   the proximal displacement (cyan triangle), where it actually is
+%   (yellow triangle), and then the displacement (yellow vector).
 %
 %
 %   Inputs:
