@@ -65,6 +65,8 @@ function BirdData=BendSweepTwistDeflections(birdtype)
         
         %Currently, we do not have all the data for this to be used.
         %    BirdData=getStiffness(BirdData,numFPA,numV);
+        %Get the stiffness using the isotropic assumption.
+            BirdData=getStiffnessArbitraryForm(BirdData,numFPA,numV);
         
     
     %Write things to the command line.
