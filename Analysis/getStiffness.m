@@ -1,5 +1,5 @@
 function BirdData=getStiffness(BirdData,numFPA,numV)
-%   BirdData=getDeflections(BirdData,numFPA,numV)
+%   BirdData=getStiffness(BirdData,numFPA,numV)
 %
 %   Calculates the stiffness tensor using least squares.
 %   
