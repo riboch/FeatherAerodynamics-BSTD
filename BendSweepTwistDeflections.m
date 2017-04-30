@@ -38,6 +38,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
         %birdtype='red-tailed hawk 20141225';
         %birdtype='peregrine falcon 20141225';
         birdtype='american kestrel 20141225';
+        birdtype='great horned owl 20141225';
     end
 
 
@@ -66,7 +67,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
         %Currently, we do not have all the data for this to be used.
         %    BirdData=getStiffness(BirdData,numFPA,numV);
         %Get the stiffness using the isotropic assumption.
-            BirdData=getStiffnessArbitraryForm(BirdData,numFPA,numV);
+        %    BirdData=getStiffnessArbitraryForm(BirdData,numFPA,numV);
         
     
     %Write things to the command line.
@@ -80,7 +81,7 @@ function BirdData=BendSweepTwistDeflections(birdtype)
         %Obtains the camera parameters for overlaying triangles, frames, and vectors onto the raw images.
             camera_params=DLTCameraParameters();
             overlayImagePrepare(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);  % Prepare raw images
-            %overlayTrianglesImage(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);% Overlay proximal and distal triangles
+            overlayTrianglesImage(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);% Overlay proximal and distal triangles
             overlayFramesOnCamera(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym);% Overlay frames on triangles
             %overlayDisplacementsOnCamera(BirdData,numFPA,numV,camera_params,picfolder,birdAcronym)
     
